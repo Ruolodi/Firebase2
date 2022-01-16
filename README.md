@@ -1,4 +1,4 @@
-# batyaroutervuex
+# FireBaseRouterVuex
 
 ## Project setup
 ```
