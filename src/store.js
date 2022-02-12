@@ -29,12 +29,12 @@ export default createStore({
       const token = "9VIfEVIaYVIWjgWJUxbdd6TqHEHIeIqBbxdUXsfh"
       const request = {
         numberBD: getters.numberNote,
-        keyWordBD: getters.keyWord,
+        keyWordBD: getters.keyWord.toUpperCase(),
         answerBD: getters.answer,
         statusBD: getters.select,
         discriptionBD: getters.discription,
       }
-      getters.keyWord = getters.keyWord.toUpperCase()
+
       const response = await axios.post(
         `https://fireguard-e136d-default-rtdb.firebaseio.com/answers.json?auth=${token}`,
         request
